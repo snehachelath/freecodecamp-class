@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+  <div>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback! Please take a moment to share your thoughts and help us improve.</p>
+    <form id="survey-form">
+
+      <fieldset>
+        <label for="name" id="name-label"> Full Name: </label>
+        <input id="name" type="text" placeholder="Enter Your Name.." required /> <br>
+
+
+        <label for="email" id="email-label">Your Email:</label>
+        <input id="email" type="email" placeholder="Enter Your Email" required /> <br>
+
+        <label for="number" id="number-label">Your Age:</label>
+        <input id="number" type="number" placeholder="Enter Your Age" required min="18" max="90" />
+      </fieldset>
+      <fieldset>
+        <label>How would you rate our services? </label>
+        <select id="dropdown" name="experiance">
+          <option value="excellent">Excellent
+          <option>
+          <option value="good">Good
+          <option>
+          <option value="average">Average
+          <option>
+          <option value="poor">Poor
+          <option>
+
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend us to others?</label><br>
+
+        <input type="radio" name="recommend" value="1">Definitely
+
+        <input type="radio" name="recommend" value="2">May be
+        <input type="radio" name="recommend" value="3">No
+      </fieldset>
+
+
+      <fieldset>
+
+        <label>What would you like to improve us?</label>
+        <label for="friendly"><input type="checkbox" required name="friendly" value="friendly"> Friendliness and
+          responsiveness of staff</label>
+        <label for="speed"><input type="checkbox" required name="speed" value="speed"> Speed and efficiency of
+          service</label>
+        <label for="accuracy"><input type="checkbox" required name="accuracy" value="accuracy"> Accuracy of information
+          provided</label>
+
+      </fieldset>
+
+
+      <label>Any Suggestions?</label>
+      <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here.."></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
